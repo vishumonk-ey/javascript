@@ -27,5 +27,9 @@ const arrOne=[0,1,2,3,4,5]
 console.log(arrOne.slice(0,3));
 console.log(arrOne);
 
-console.log(arrOne.splice(0,0,"mitthu")) /* for removing elemets and will return the deleted*/
+console.log(arrOne.splice(0,0,"mitthu")) /* for removing elemets and will return the deleted elements in an array */
+// console.log(array.splice(startIndex,no.OfElementsToDelete,item1,item2...)) jo elements delete krne hain vo starting index ko bhi consider krenge....!!!!! and if adding then vo starting index vale element ke just piche aajayega
 console.log(arrOne);
+const newArr= [0,1,2,3,4,5]
+const newArrStr=newArr.join("-") /* usedd for converting an array into string with its element by a specifed seperator */
+console.log(newArrStr);
