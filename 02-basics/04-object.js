@@ -37,3 +37,14 @@ console.log(Object.keys(tinderUser)); /* returns data type of array */
 console.log(Object.values(tinderUser)); 
 console.log(Object.entries(tinderUser)); 
 console.log(tinderUser.hasOwnProperty("name"));
+
+//destructuringggggggg
+ 
+const course={
+    name:'JS in Hindi',
+    courseInstructor:'Hitesh',
+}
+const {courseInstructor: inst}=course
+
+console.log(inst)
+
