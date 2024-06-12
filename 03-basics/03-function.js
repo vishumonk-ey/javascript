@@ -21,3 +21,28 @@ console.log(result);
 let resultOne= addTwoNumber(3)
 console.log(resultOne);
 
+// we dont know the number of parameters
+// rest operator
+
+function addCartValue(val1,val2,...Num1){
+    return Num1
+}
+
+console.log(addCartValue(200,300,400,500,600))
+
+function handleObject(obj){
+    console.log(`username is ${obj.username} and price is ${obj.price}`);
+}
+
+handleObject({
+    username:"vishal",
+    price:"10000"
+})
+
+function returnThirdValue(anyArray){
+    console.log(`the third value of the given array is ${anyArray[2]}`)
+}
+ let myArray=[2,3,4,5,5]
+ returnThirdValue(myArray)
+ returnThirdValue([1,2,3])
+
