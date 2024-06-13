@@ -1,0 +1,68 @@
+js code
+1-> a global execution context is set up. (is like a stage where all the code will run/play happen)
+
+[types of execution context-:
+global execution context
+function execution context
+eval execution context // moongose
+]
+
+
+
+ then code is run in two phases -:
+
+ 1) memory phase/memory creation phase/creation phase
+ 2) execution phase
+
+ code running example-:
+
+let val1=10
+let val2=1
+
+function addNum(num1,num2){
+    let total= num1 + num2
+    return total
+}
+
+let result1=addNum(val1,val2)
+let result2=addNum(10,2)
+
+----------
+step1) global execution context is set up.
+step2) memory phase-:
+      {only memory allocation is done
+      memory allocate krdi jati hai orr usme undefined daal diya jaata hai}
+       val1=== > undefined
+       val2=== > undefined
+       addNum===> definition of function(){}
+       result1==>undefined
+       result2==>undefined
+
+step3)execution phase-:
+      val1==>10
+      val2==>1
+      function vali line ka kuch kaam nhi hoga kyuki call nhi ki hai bas declaration hua hai to no execution
+      addNum is called to is function ko execute krne ke liye ek seperate execution contextbanta hai 
+      jiske andar hota hai 
+      a)new variable environment
+      b)execution thread
+      --> seperate execution context
+         step1) memory phase-:
+         num1===>undefined
+         num2===>undefined
+         total===>undefined
+         
+         step 2) execution phase-:
+                  num1====>val1=10
+                  num2==> val2=1
+                  total==>10+2=12
+                
+                ->then the total = 12 is returned to global context.
+
+        ---> then this execution content is deleted 
+
+      result1==> total=12
+
+
+    addNum is again called 
+            

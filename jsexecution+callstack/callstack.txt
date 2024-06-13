@@ -1,0 +1,7 @@
+ is like a to do list which keeps a track of all the function invoked
+ 
+ when new function is called it goes on the top of the stack and after it is completed fully it gets removed
+
+ based on lifo principle---> last in first out
+
+ ek main function sbse phle execute hota hai
