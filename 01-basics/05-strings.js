@@ -56,8 +56,8 @@ console.log(stringOne.charAt(stringOne.length-1));
 //^ for last chaaracter === str.length-1
 let result= stringOne.concat("my",stringTwo,gameName)
 console.log(result);
-console.log(stringTwo.endsWith("world"));
-console.log(stringOne.startsWith("h"));
+// console.log(stringTwo.endsWith("world"));
+// console.log(stringOne.startsWith("h"));
 
 
 
