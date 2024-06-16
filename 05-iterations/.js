@@ -35,7 +35,12 @@ const books = [
   let userName=books.filter( (bk) => {
     return bk.title==='Book Five'
   })
-
+// yaha pe return ke saath condition laga diya but in normal function it will return a boolean
   userName=books.filter( (bk)=>bk.publish>2005 && bk.genre==='Science')
 
-  console.log(userName);
+  // console.log(userName);
+  let score=[100,200,3000,400]
+  const value= score.filter( (num)=> {
+    return num>400
+  } )
+ console.log(value)
