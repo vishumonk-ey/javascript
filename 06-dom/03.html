@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM </title>
+</head>
+<body style="background-color: lightcyan; color:white">
+    
+</body>
+<script>
+    const h1=document.createElement("h1")
+    console.log(h1)
+    // h1.id="myId"
+    h1.setAttribute("id","myId")
+    // h1.className="heading"
+    h1.setAttribute("class","heading")
+    // h1.innerText="mai aur mera Mitthu"
+    const headingText=document.createTextNode("mai aur mera mitthu")
+    h1.appendChild(headingText)
+    h1.style.color="green"
+    // abhi poora element memory pe hai isko screen pe laane ke liye append krna padega
+    document.body.appendChild(h1
+        
+    )
+</script>
+</html>

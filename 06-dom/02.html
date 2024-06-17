@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM with Vishal</title>
+</head>
+<body style="background-color: lightcoral; color: white;">
+    <div class="parent">
+        
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+<script>
+    const parent=document.querySelector(".parent")
+    // console.log(parent);
+    // console.log(parent.children);
+    // for (let i = 0; i< parent.children.length; i++) {
+    //     parent.children[i].style.color="black"
+    // }        
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    const dayOne=document.querySelector(".day")
+    dayOne.style.color="green"
+    // console.log(dayOne.parentElement)
+    // console.log(dayOne.nextElementSibling)
+    console.log(parent.childNodes)
+    // ek line break ko bhi text node consider kr rha hai and ek se jyaada line break hua html me to browser consider ek ko hi krega
+</script>
+</html>
