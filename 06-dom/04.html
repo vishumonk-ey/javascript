@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body style="background-color: lightcyan; color:black;
+font-size: x-large;">
+    <div class="language">
+        <li>javascript</li>
+    </div>
+</body>
+<script>
+    function addNewLang(langname){
+        const li=document.createElement("li")
+        li.innerText=`${langname}`
+        // we dont use innerText much kyuki jab bhi add krunga to browser poore html ko breakdown krega and new html add kregA ANd then fir browser html parse krke show krega----->too muchwork
+        document.querySelector(".language").appendChild(li)
+        
+    }
+    addNewLang("bihari")
+    //  addNewLang("python")
+    //  /more optimized wqayyyy
+    function addNewLangOpti(langname){
+        const newLang=document.createElement("li")
+        newLang.appendChild(document.createTextNode(`${langname}`))
+        document.querySelector(".language").appendChild(newLang)
+
+    }
+    addNewLangOpti("bangla")
+    addNewLang("java")
+
+    // edit----:::::::
+    const secondLang=document.querySelector("li:nth-child(2)")
+    // console.log(secondLang);
+    // directy dont use innertext rebuild issue
+    const newLang=document.createElement("li")
+    const text=document.createTextNode("golang")
+    newLang.appendChild(text)
+    // console.log(newLang);
+    secondLang.replaceWith(newLang)
+
+    // ----edit---new wayy-:
+
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML="<li>python</li>"
+    // dont use butt
+
+
+</script>
+</html>
