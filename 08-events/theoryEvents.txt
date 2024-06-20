@@ -1,0 +1,21 @@
+# timeStamps-->hamne jo event specify kr rkha hai addEventListener me usko karne me kitna time laga.. in general time elapsed from epoch and agr window global object hai to time elapsed from the moment when the page/script was fully loaded..in milliseconds
+        ------------------------------------------
+# preventDefault()--> used to prevent default,,..checkbox na tick krne dena,text na daalne dena,submit na krne dena
+            -------------------------------
+# target-> object on which event is done
+        ---------------------------------
+# currentTarget-> jis pe mera eventHandler attached haii naa ki target.. agar parent pe eventHandler attached hai and mai child pe click kr rha hu to ==> event.target-->child
+                            event.currentTarget-->parent
+            ---------------------------
+#toElement-->
+
+
+            -------------------------------
+
+#srcElement-->
+
+            -------------------------------
+#altKey,shiftKey,ctrlKey--> whether alt key was pressed during the event
+
+            --------------------------------
+# keyCode--> gives the numeric code of whatever key we pressed
