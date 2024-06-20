@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" 
+                 ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert('one')
+    // }
+    // not used much because doesnt gives much feature---
+    // event is an object***
+
+    // addEventListener("click",function(){},false)
+    //true or false is for event propogation
+   
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("ul is clicked")
+    // })
+    //##  event bubbling -- phle jo andar vale pe event lagay hai vo run kara and then outsideeee---when false
+    // ## if true-- then event capturing -- bahar se code run hoga and then andAR ayga
+
+    // document.querySelector("#google").addEventListener("click",function(e){
+    //     e.preventDefault();
+    //     console.log("google is clicked")
+
+    // },true)
+// topics to read###########-:
+/* type(common)-:
+a)click-mouse/touchScreen/enter or space key while element is in focus--event type -> pointerEvent
+b)DoubleClick=>as the name suggests
+c)MouseDown=>mouse button press hone pe trigger
+    event.ctrlKey/event.altKey/event.shiftKey-->will tell whether was pressed during the event or not in boolean
+    event.button--will tell which buttonn was pressed
+    0->left
+    1->middle
+    2->right
+d)MouseUp=>when a button in a mouse/trackpad is released
+same prop. as above
+e)ContextMenu--> triggers when right button is clicked or context menu is opened
+f)MouseOut->jab cursor kisi element kr upar se jaaye jab hatega uske upar se tab
+g)mOUse Over-> jab mouse uske upar ayega tab use hoga ye
+h)keydown->when a key is pressed...event.code-->returns string showing physical key code
+i)keyuP=> when a key is released...
+j)keyPress=> when a key is pressed except(shift,ctrl,alt,window)
+h)focus-->jab focus aye uspe tab ye kaam karega
+i)blurr->jab focus hate to ye trigger hoga
+j)change--> dropdown,radio,checkbox in sab me change krunga to trigger or agar text input krke fir kahi aur click krunga tb hoga
+k)submit--> when we have a button in a form
+l)touchstart-->when one or more touchpoint is added
+m)touchend-->when one or more touchpoint is removed
+n)touchCancel-->when Touchpoints are removed due to interruptions like switching apps,changing orientation,devvice losing power...
+o)tOuchMove-->when touchpoints are moved tab trigger hoga
+p) resize--> jab resize krte
+q)scroll--> jab scroll krunga tb fire hoga 
+r)load--> jaise hi apna poora page load hojayega sari files(iframe/script..) tab trigger
+s)Hashchange---> jab url me # ke baad change hota hai tab trigger hota hai[# ke baad vala is fragment identifier/hash]
+*/
+
+
+    document.querySelector("#images").addEventListener("click",function(e){
+
+        if(e.target.tagName=="LI"){
+            e.target.remove()
+        }
+         else if (e.target.tagName=="IMG"){
+            const removeIt=e.target.parentNode
+            console.log(removeIt);
+            removeIt.remove()
+            }
+            
+           
+        // removeIt.parentNode.removeChild(removeIt)
+    },false)
+</script>
+</html>
+
+ 
