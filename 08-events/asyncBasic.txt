@@ -1,0 +1,9 @@
+jS--> asynchronus lang but its default behaviour is synchronus(phle ek code run hoga fir doosra and fir teesrraa...) and single threaded lang (
+
+)
+
+blocking code--> sync , 
+non blocking code-> asynchronus
+ asynchronus--> code by code run na honaa like it wonnt wait for a code to fully execute and then execute further codes..it will execute further codes till the previous code is being executecd
+
+ https://excalidraw.com/#json=qHspki3UnAAiaxX9M-3rL,rNq1F0JohlxWSqflbQpy5g

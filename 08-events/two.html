@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightgray;">
+    <h1>chai aur code</h1>
+    <button id="stop">tham ja jara</button>
+</body>
+<script>
+    // const callVishal= function(){
+    //     console.log("heloooo Vishal!!")
+    // }
+    // setTimeout(callVishal,2000)
+    const heading=document.querySelector("h1")
+    const changeMe=setTimeout(function(){
+        heading.innerHTML="vishal bhai Bhot badhiyaaa"
+    },4000)
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearTimeout(changeMe)
+        console.log("stop krdiya")
+    })
+    // settimeout krke jo callBack queue me daala tha usko ham clearTimeout krke queue se hata dengeeee!!!!
+</script>
+</html>

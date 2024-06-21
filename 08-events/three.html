@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: lightgray;">
+    <h1>chai aur sotduu Vishal</h1>
+    <button id="stop" style="padding: 3px,6px; background-color: lightpink;">stop</button>
+    <button id="start" style="padding: 3px,6px; background-color: lightpink;">start</button>
+
+    
+</body>
+<script>
+    // setInterval ek fixed interval pe code repeat krta rahega and setTimeout bas ek baari run karayega
+    // setInterval me third parameter bhi hota hai for input
+    function tellDate(str){
+        console.log(`${str} and ${Date.now().toLocaleString()}`)
+    }
+    let repeatDate
+
+    document.getElementById("start").addEventListener("click",function(e){
+        repeatDate=setInterval(tellDate,2000,"hello vishal jii,  current time is :")
+    },false)
+
+    document.querySelector("#stop").addEventListener('click',function(e){
+        clearInterval(repeatDate)
+    },false)
+</script>
+</html>

@@ -7,15 +7,24 @@
 # currentTarget-> jis pe mera eventHandler attached haii naa ki target.. agar parent pe eventHandler attached hai and mai child pe click kr rha hu to ==> event.target-->child
                             event.currentTarget-->parent
             ---------------------------
-#toElement-->
+#toElement--> mouse event jab trigger tab uss time pr mouse kis element pr hover kr rha tha 
 
 
             -------------------------------
 
-#srcElement-->
+#srcElement--> alternative name of target
 
             -------------------------------
 #altKey,shiftKey,ctrlKey--> whether alt key was pressed during the event
 
             --------------------------------
 # keyCode--> gives the numeric code of whatever key we pressed
+        --------------------------------
+
+#ClientX/Y --> gives the coordinates in px whose reference is the top left of the browser window(visible vaala) ..doesnt depends if you scroll or not 
+                ------------------
+
+#pageX/Y--> gives the coordinates whose reference is the top left of the full rendered page including the page scrolled also
+
+                --------------
+#screenX/Y--> reference point is top left part of physical screen
