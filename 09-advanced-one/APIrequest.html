@@ -1,1 +1,59 @@
-c
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+                height:100vh;
+                width:100vw;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+        }
+        .card{
+            display:flex;
+            padding:20px,40px;
+            height:40%;
+            width:50%;
+            justify-content: space-between;
+            align-items:center;
+        }
+
+    </style>
+</head>
+<body style="background-color: lightgray;">
+
+    <script>
+        const btn=document.createElement('button')
+        const card= document.createElement('div')
+        card.setAttribute("class","card")
+        btn.innerHTML="Get Data"
+        const xhr = new XMLHttpRequest()
+        const requestUrl="https://api.github.com/users/hiteshchoudhary"
+
+        xhr.open("GET",requestUrl)
+        xhr.send()
+        let data
+        xhr.onreadystatechange= function(){
+          if(xhr.readyState===4){
+             data=JSON.parse(this.responseText)
+              document.body.appendChild(btn)
+          // conversion in json(object)
+          }
+        }
+        const userInfo= function(e){
+              card.innerHTML=
+                  <img src=${data.avatar_url} class="image"></img>
+                  <div class="followers"> hitesh sir's follower count : ${data.followers}</div>
+              
+              document.body.appendChild(card)
+              document.body.removeChild(btn)
+        }
+        console.log(btn.innerHTML);
+       console.log(document.querySelector('button'))
+      //   document.querySelector("button").addEventListener('click',userInfo(e),false)
+      </script>
+</body>
+</html>
