@@ -20,40 +20,47 @@
             justify-content: space-between;
             align-items:center;
         }
+        .image{
+            height:200px;
+            width:200px;
 
+        }
     </style>
 </head>
 <body style="background-color: lightgray;">
 
     <script>
-        const btn=document.createElement('button')
+        
         const card= document.createElement('div')
         card.setAttribute("class","card")
-        btn.innerHTML="Get Data"
+        
         const xhr = new XMLHttpRequest()
         const requestUrl="https://api.github.com/users/hiteshchoudhary"
-
         xhr.open("GET",requestUrl)
         xhr.send()
         let data
         xhr.onreadystatechange= function(){
           if(xhr.readyState===4){
+             const btn=document.createElement('button')
+             btn.innerHTML="Get Data"
+             document.body.appendChild(btn)
+
              data=JSON.parse(this.responseText)
-              document.body.appendChild(btn)
+
+             document.querySelector("button").addEventListener('click',userInfo,false)
+              
           // conversion in json(object)
+          // dekh mai xmlhttprequest ke andar append kr rha hu aur agar document.querySelector bahar karunga to access nahi kr payega kyuki request complete hone me thoda time lagta hai and select krne ka process immediately hojayega after the script is loaded. 
           }
         }
-        const userInfo= function(e){
-              card.innerHTML=
+         function userInfo(e){
+              card.innerHTML=`
                   <img src=${data.avatar_url} class="image"></img>
                   <div class="followers"> hitesh sir's follower count : ${data.followers}</div>
-              
+              `
               document.body.appendChild(card)
-              document.body.removeChild(btn)
+              document.body.removeChild(e.target)
         }
-        console.log(btn.innerHTML);
-       console.log(document.querySelector('button'))
-      //   document.querySelector("button").addEventListener('click',userInfo(e),false)
       </script>
 </body>
 </html>
