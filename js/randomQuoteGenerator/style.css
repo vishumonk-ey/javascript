@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-transform: initial;
+  overflow-y: hidden;
+  color: white;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 50px 10px;
+  background-image: url(https://images.unsplash.com/photo-1595520519880-a86c48ea536c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  background-position: bottom;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  padding: 20px 0px;
+}
+.container h1 {
+  padding: 6px 18px;
+}
+.container div {
+  padding: 6px 18px;
+  font-family: "Courier New", Courier, monospace;
+  max-width: 500px;
+  margin-top: 30px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.container button {
+  width: fit-content;
+  padding: 5px 15px;
+  align-self: end;
+  margin-right: 10px;
+  border: 0.5px solid white;
+  /* background-color: aqua; */
+  outline: none;
+  background: transparent;
+  color: white;
+  border-radius: 3px;
+  margin-top: 80px;
+}
+
+.quoteContainer p span i {
+  font-size: 20px;
+  text-align: start;
+}
+.quoteContainer p li {
+  margin-top: 20px;
+  font-size: 15px;
+  list-style-type: none;
+}
+
+
