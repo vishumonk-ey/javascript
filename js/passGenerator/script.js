@@ -10,7 +10,6 @@ const lowerCaseAlphabets= 'abcdefghijklmnopqrstuvwxyz'.split("")
 const numbers="0123456789".split("")
 const symbols="!@#$%^&*()_+[]{}|;:,.<>?".split("")
 const symbolsLength=symbols.length
-console.log("vishal loves lipuuuu");
 input.addEventListener('input', 
     function(e){
         password=""
@@ -74,11 +73,21 @@ function generatePassword(pwdLength){
             }
             
         }
-        console.log(password,1);
+        document.querySelector(".password").style.color="black"        
         document.querySelector(".password").innerHTML=password
-        console.log(password);
     }else{
         document.querySelector(".password").innerHTML="Please tick any of the checkbox ."
         document.querySelector(".password").style.color="Orange"
     }
 }
+document.querySelector(".ri-clipboard-line").addEventListener('click',function(e){ if(password){
+    navigator.clipboard.writeText(password).then(function(){
+        alert('password copied to clipboard')
+    }).catch(function(err){
+        alert('password wasnt copied!')
+    })
+}else{
+    alert('no password to copy')
+}
+
+},false)
