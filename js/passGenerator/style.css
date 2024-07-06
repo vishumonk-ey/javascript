@@ -119,6 +119,19 @@
 }
 .password::-webkit-scrollbar{
     -webkit-appearance: none;
+    height: 0px;
+    width: 0px;
+}
+.passwordDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 0.482);
+}
+.ri-clipboard-line:hover{
+    text-align: center;
+    border-radius: 2px;
+    background: rgb(159, 199, 242);
 }
 
 @media (max-width:780px) {
@@ -130,5 +143,8 @@
         padding:40px;
         padding-top: 100px;
     }
-    
+    .passwordDisplay{
+        padding: 12px 15px;
+        gap: 20px;
+    }
 }
