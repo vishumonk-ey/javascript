@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: initial;
+       
+       color: black;
+    
+    }
+    .main{
+        background-color: lightslategrey;
+        padding: 50px 80px;
+        min-height: 100vh;
+    }
+    .container{
+        width: 100%;
+        max-width: 800px;
+        padding: 30px 20px;
+    }
+    .fullName{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    .firstNameCont{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+        gap: 2px;
+        position: relative;
+
+    }
+    .lastNameCont{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+    }
+    #firstName{
+        position: relative;
+        flex-grow: 1;
+        outline: none;
+        padding: 5px 10px;
+        border: 1px,black,solid;
+        border-radius: 5px;
+    }
+    #firstName:focus ,
+     #lastName:focus ,
+     #userName:focus,
+     #captcha:focus,
+     #email:focus,
+     #password:focus{
+        border: 1.5px,blue,solid;
+    }
+    #lastName{
+        flex-grow: 1;
+        outline: none;
+        border-radius: 2px;
+        padding: 5px 10px;
+        border: 1px,black,solid;
+        border-radius: 5px;
+    }
+    .red::after{
+        content:"";
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        /* background-color: red; */
+        z-index: 5;
+        top: 6px;
+        /* transform: translateY(-50%); */
+        right: 7px;
+        background-image:url(wrong-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .green::after{
+        content:"";
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        /* background-color: red; */
+        z-index: 5;
+        top: 6px;
+        /* transform: translateY(-50%); */
+        right: 7px;
+        background-image:url(correct-signal-svgrepo-com.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    .userName{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    .userNameCont{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+        gap: 2px;
+        position: relative;
+    }
+    #userName{
+        flex-grow: 1;
+        outline: none;
+        border-radius: 2px;
+        padding: 5px 10px;
+        border: 1px,black,solid;
+        border-radius: 5px;
+    }
+    .email{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    .emailCont{
+        /* flex-grow: 1; */
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        gap: 2px;
+        position: relative;
+    }
+    #email{
+        /* flex-grow: 1; */
+        outline: none;
+        border-radius: 2px;
+        padding: 5px 10px;
+        border: 1px,black,solid;
+        border-radius: 5px;
+    }
+    .password{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    .passwordCont{
+        /* flex-grow: 1; */
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+        gap: 2px;
+        position: relative;
+    }
+    #password{
+        /* flex-grow: 1; */
+        outline: none;
+        border-radius: 2px;
+        padding: 5px 10px;
+        border: 1px,black,solid;
+        border-radius: 5px;
+    }
+    .gender{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    .checkboxes{
+        display: flex;
+        align-items: center;
+        margin-left: 130px;
+    }
+    .maleDiv{
+        display: flex;
+        gap: 4px;
+    }
+    .femaleDiv{
+        display: flex;
+        gap: 4px;
+        margin-left: 15px;
+    }
+    .othersDiv{
+        display: flex;
+        gap: 4px;
+        margin-left: 15px;
+    }
+    .captcha{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    #captcha{
+        /* flex-grow: 1; */
+        outline: none;
+        border-radius: 2px;
+        padding: 5px 10px;
+        border: 1px,black,solid;
+        border-radius: 5px;
+        /* margin-left: 125px; */
+    }
+    .checkbox{
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+    .TandCcont{
+        margin-left: 20px;
+    }
+    .captchaCont{
+        /* flex-grow: 1; */
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 130px;
+        gap: 2px;
+        position: relative;
+    }
