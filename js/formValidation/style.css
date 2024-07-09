@@ -14,7 +14,7 @@
     
     }
     .main{
-        background-color: lightslategrey;
+        background-color: whitesmoke;
         padding: 50px 80px;
         min-height: 100vh;
     }
@@ -43,7 +43,7 @@
         display: flex;
         flex-direction: column;
         gap: 2px;
-
+        position: relative;
     }
     #firstName{
         position: relative;
@@ -171,8 +171,12 @@
         align-items: center;
         padding: 0 20px;
         margin-top: 10px;
+        position: relative;
     }
-    .checkboxes{
+    .gender.green::after{
+        right: 280px;
+    }
+    .genderSelect{
         display: flex;
         align-items: center;
         margin-left: 130px;
@@ -206,12 +210,13 @@
         border-radius: 5px;
         /* margin-left: 125px; */
     }
-    .checkbox{
+    .TandCcheckbox{
         display: flex;
         align-items: center;
         padding: 0 20px;
         margin-top: 30px;
         margin-left: 50px;
+        position: relative;
     }
     .TandCcont{
         margin-left: 20px;
@@ -224,4 +229,7 @@
         margin-left: 130px;
         gap: 2px;
         position: relative;
+    }
+    .textRed{
+        color: red;
     }
