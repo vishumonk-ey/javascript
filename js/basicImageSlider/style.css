@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        font-family: monospace;
+        text-transform: initial;
+       color: black;
+    
+    }
+
+    .main{
+        min-height: 100vh;
+        padding: 40px 30px;
+    }
+    .imageSlider{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    .imageBanner{
+        height: 200px;
+        width: 300px;
+        display: flex;
+        transition: all 0.5s ease;
+        overflow: hidden;
+    }
+    .imageSilderDiv{
+        display: flex;
+        transition: all 0.7s ease-in-out;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .circles{
+        margin-top: 10px; 
+        font-size: 8px;
+        color: lightslategray; 
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: all 1s ease;  
+    }
+    img{
+        height: 200px;
+        width: 300px;
+        border-radius: 3px;
+        /* display: none; */
+    }
+    
+    .magnify{
+        font-size: 15px;
+        color: black;
+    }
+    
