@@ -22,6 +22,7 @@
         --------------------------------
 
 #ClientX/Y --> gives the coordinates in px whose reference is the top left of the browser window(visible vaala) ..doesnt depends if you scroll or not 
+#OffsetX/Y--> give the coordinate of the mouse pointer with relative to the target element jispe mouseEvent laga gya hai
                 ------------------
 
 #pageX/Y--> gives the coordinates whose reference is the top left of the full rendered page including the page scrolled also
