@@ -28,12 +28,12 @@ const addInput=function(e){
 }
 document.querySelector(".container").addEventListener
 ('click',function(e){
-    if(e.target.tagName="P"){
+    if(e.target.tagName=="P"){
         console.log("fired");
         addInput(e)
     }
 },false)
 function calculateFunc(e){
-    console.log("calc fired");
-    inputDisplay.innerHTML=`${(inputDisplay.innerHTML)}`
+    inputDisplay.innerHTML=eval(inputDisplay.innerHTML)
+    // eval function is bad and has security risks , arguement should always be string . if arguement is other than string then it will return it as it is .. fo e.g string object
 }
