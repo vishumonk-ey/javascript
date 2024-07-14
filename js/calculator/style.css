@@ -125,3 +125,9 @@
     .row5 p:last-child{
         color: lightseagreen;
     }
+    p{
+        cursor: pointer;
+    }
+    p:hover{
+        background-color: rgba(119, 136, 153, 0.304);
+    }
