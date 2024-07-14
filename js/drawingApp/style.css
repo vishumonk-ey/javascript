@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: initial;
+       color: black;
+    
+    }
+.main{
+    min-height: 100vh;
+    padding: 20px 40px;
+    background: linear-gradient(yellow,orange,60deg);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+#canvas{
+    height: 100%;
+    width: 100%;
+}
+.canvas{
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: inherit;
+    height: 350px;
+    overflow: hidden;
+    /* overflow hidden krne ka fayda nhi kyuki flow se uth gya hai upar */
+}
+h1{
+    text-align: center;
+}
+button{
+    width: fit-content;
+    padding: 3px 9px;
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.btnDiv{
+    display: flex;
+    gap: 18px;
+    /* justify-content: center; */
+    align-items: center;
+}
+.canvas p{
+    position: absolute;
+    background-color: black;
+    height:5px;
+    width: 5px;
+    border-radius: 100%;
+}
+#colorBtn{
+    position: relative;
+    width: fit-content;
+    padding: 3px 9px;
+    background-color: coral;
+    color: white;
+    border-radius: 5px;
+}
+#colorBtn p{
+    font-size: 14px;
+}
+.color{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: lightslategray;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: none;
+    border-radius: 3px;
+}
+.color li{
+    list-style: none;
+    margin-top: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+.color li:hover{
+    color: rgb(0, 255, 255);
+}
+.color li:first-child{
+    margin-top: 0;
+}
+.color.show{
+    display: block;
+}
+.color li.selected::after{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    /* background-color: blue; */
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-image: url(tick-svgrepo-com.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.fontWidth{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.fontWidth #fontWidthRange{
+    -webkit-appearance: none;
+    width: 50%;
+    height: 5px;
+    background-color: rgb(42, 210, 42);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.fontWidth #fontWidthRange::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 1px solid rgb(42, 210, 42);
+}
