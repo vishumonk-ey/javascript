@@ -16,11 +16,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(120deg,rgb(224, 127, 224),rgb(116, 116, 227));
+    padding: 20px 30px;
+}
+.container{
+  width: 100%;
+  background-color: #fff;
+  max-width: 600px;
+  padding: 25px 0px;
+  border-radius: 10px;
+}
+.cardsCont{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0px 30px;
+  margin-top: 20px;
+}
+.cardsRow1,
+.cardsRow2,
+.cardsRow3{
+  display: flex;
+  /* flex-grow: 1; */
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
 }
 .card{
-    width: 100px;
-    height: 150px;
+    width: 150px;
+    height: 120px;
+    border-radius: 3px;
+    overflow: hidden;
     perspective: 1000px; /* what does it do */
+    /* perspective is the distance between the card and the screen .. isko set krne ke baad me depth aur height above jaise effect create krskta hu by translate Z */
+}
+.back img{
+  width: 150px;
+  height: 120px;
 }
 .card div{
     position: absolute;
@@ -30,7 +63,10 @@
     transition: all 0.6s ease-in-out;
 }
 .front {
-    background-color: #fff;
+    background-image: url(https://images.unsplash.com/photo-1616593437252-0631aeb95590?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .back {
@@ -43,4 +79,52 @@
   }
   .flipped .back{
     transform: rotateY(0deg);
+  }
+  .display{
+    margin-top: 15px;
+    text-align: center;
+  }
+ .btnDiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+ }
+ .restart{
+  width: fit-content;
+  padding: 8px 25px;
+  border: none;
+  background-color: rgba(100, 148, 237, 0.506);
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  display: none;
+ }
+ .restart.show{
+  display: block;
+ }
+ .info div{
+  display: flex;
+  gap: 5px;
+  align-self: flex-end;
+ }
+ .info{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0px 27px;
+ }
+  @media (max-width:580px) {
+    .card{
+      width: 100px;
+      height: 100px;
+      border-radius: 3px;
+      overflow: hidden;
+      perspective: 1000px; /* what does it do */
+  }
+  .main{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
   }
