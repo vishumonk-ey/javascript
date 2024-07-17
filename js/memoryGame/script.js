@@ -89,6 +89,9 @@ function playGame(e) {
   if (!prevCard) {
     prevCard = e;
     e.currentTarget.removeEventListener("click", cardEventListener);
+    // removeEventListener requires two arguement..ek to event itself which has to be removed and second callback function which we added while listening the event..we have to prob=vide same callback function
+    // agar maine function directly addEventListener ke andar likha tha and copy krke me removeEventlistener me paste krdu to they both wont be same even though will look identical
+// jab bhi aise function likhte hain to uss function ka naya instance create hojata hai mtlb dono ka reference alg hai.. to if i want to removeEventlistener to dhyaan rkhna ki mai addEventListener pe callback ka reference du and same reference remove krte time bhi du
   } else if (
     prevCard.target.parentElement.querySelector(".back").innerHTML ==
     e.target.parentElement.querySelector(".back").innerHTML
