@@ -1,0 +1,23 @@
+1. Basic projects like -:
+sticky NavBar => studied difference between position fixed and absolute , got to know background position-fixed property and how the navbar is made in the websites which i generally use.
+Number Guessing game,Stopwatch,BMI calculator,a website which changes its background color randomly each second
+
+2.Password Generator -> got to know how i can make a text available for copy just by clicking the copy button, difference between textContent and innerHTML and their respective use case
+
+3.To-Do list -> just used the basic stuff 
+
+4.Timer -> initially made it without using date object and it became too complex but finally it worked pretty well without any error :) , then made it again using the date object
+
+5. Quiz website -> used fetchAPI to get variety of questions , was stuck at how can i randomly arrange the options each time and check which one is correct from them
+
+6. Random quote generator -> revised and implemented fetchAPI.
+
+7. Form Validator-> learnt how cool looking regex can be so useful in validation,got a basic understanding of regex and their syntax and how we can write them for our own specific use
+
+8.Drawing App -> created it without canvas element but this method had errors and eventually solved the errors but still it didnt looked good , studied canvas element and why it doesnt work properly if we only give it height and width through css only,got to know about various mouse events.
+
+9. Calculator -> was trying to create it using logic based on BODMAS rule but got to know about eval() method,eval() has security risks so should be generally avoided in industrial use and takes string as an arguement only.if any other arguement(e.g-> string Object) then it will return the arguement as it is
+
+10.Image Slider -> i can fire any event manually through code :) ..like for e.g,in forms if i press an enter key then i can fire a click event on submit button, studied clientWidth
+
+11.Memory Card Game -> learnt flipping card animation,perspective property,using removeEventListener properly 
