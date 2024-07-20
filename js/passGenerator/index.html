@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     rel="stylesheet"
-/>
-  </head>
-  <body>
-    <div class="main">
-      <div class="container">
-        <div class="passwordDisplay">
-          <p class="password">Password</p>
-          <i class="ri-clipboard-line"></i>
-        </div>
-        <div>
-          <h1>Customize Your Password !</h1>
-          <hr />
-          <div class="passwordModification">
-            <div class="sliderContainer">
-              <p class="valueLeft">1</p>
-              <input type="range" id="slider" min="1" max="50" />
-              <p class="valueRight">50</p>
-              <span>25</span>
+  />
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="passwordDisplay">
+        <p class="password">Password</p>
+        <i class="ri-clipboard-line"></i>
+      </div>
+      <div>
+        <h1>Customize Your Password!</h1>
+        <hr />
+        <div class="passwordModification">
+          <div class="sliderContainer">
+            <p class="valueLeft">1</p>
+            <input type="range" id="slider" min="1" max="50" />
+            <p class="valueRight">50</p>
+            <span>25</span>
+          </div>
+          <p class="pwdLengthDisplay">Password Length - <span>25</span></p>
+          <div class="checkboxContainer">
+            <div class="checkbox">
+              <input type="checkbox" id="upperCase" />
+              <p class="upperCase">Upper Case</p>
             </div>
-            <p class="pwdLengthDisplay">Password Length - <span></span></p>
-            <div class="checkboxContainer">
-              <div class="checkbox">
-                <input type="checkbox" id="upperCase" />
-                <p class="upperCase">Upper Case</p>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="lowerCase" />
-                <p class="lowerCase">Lower Case</p>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="number" />
-                <p class="number">Number</p>
-              </div>
-              <div class="checkbox">
-                <input type="checkbox" id="symbol" />
-                <p class="symbol">Symbol</p>
-              </div>
+            <div class="checkbox">
+              <input type="checkbox" id="lowerCase" />
+              <p class="lowerCase">Lower Case</p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="number" />
+              <p class="number">Number</p>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="symbol" />
+              <p class="symbol">Symbol</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
