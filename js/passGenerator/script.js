@@ -74,7 +74,8 @@ function generatePassword(pwdLength){
             
         }
         document.querySelector(".password").style.color="black"        
-        document.querySelector(".password").innerHTML=password
+        document.querySelector(".password").textContent=password
+        // textContent because i am just dealing with plain text , innerHTML phle jo string provide ki hai usse as an HTML content parse krega (mtlb tokens me todega fir usse dom Element banayega) whereas textContent directly inserts the string 
     }else{
         document.querySelector(".password").innerHTML="Please tick any of the checkbox ."
         document.querySelector(".password").style.color="Orange"
