@@ -1,10 +1,12 @@
-"use script"/* all of our code will be treated as a newer version of js */
+"use strict"/* all of our code will be treated as a newer version of js */
 // alert(3+3); not defined in nodejs but will work in browser
 let name= "vishal"
 let age=19
 let isLoggedIn= true
 // data types
-// number- range
+// number- range...
+// max safe integer -> 2^53 - 1
+// min safee integer -> -2^53 + 1
 // bigInt- bhot bada number rkh
 // boolean-true/false
 // string- "" ''
