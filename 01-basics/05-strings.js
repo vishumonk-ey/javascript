@@ -26,7 +26,7 @@ let anotherString= myName.substring(1 , 4) /* last vala isnt included and we can
 console.log(anotherString.length);
 
  let newString=myName.slice(0,9) 
- 
+ // string is immutable,once declared wont be able to change!
  /*output will be empty string if my index start is greater or equal to the strlength*/
 
 //  index start is included and index end is excluded. if index end isnt given or is greater then strlen then string will be extracted till end
@@ -41,7 +41,7 @@ console.log(newString);
 let newStringOne="    vishaallll     "
 console.log(newStringOne.trimEnd()); 
 // trim removes empty spaces.
-
+// trim wont remove spaces in middle of the text only end
 const url = "mitthu-loves-to-eat-everything" 
 console.log(url.replace('-',' '));
 // replace is changing only first occurence to change all use replaceAll
