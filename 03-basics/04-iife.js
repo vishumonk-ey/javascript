@@ -4,7 +4,7 @@
 })() ;
 
 // jab do iife ek saath likh rha hu to pehla vala semicolon se end krna padega 
-
+// khudka private scope create krta hai agar isme var se variable declare krunga to uske bahar ye variable ka access nahi dega 
 ( (name) => { 
     console.log(`db connected again ${name}`)
 } )("vishal")
