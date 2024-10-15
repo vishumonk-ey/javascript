@@ -18,3 +18,8 @@ console.log(typeof age)
 console.log(typeof "mitthu")
 console.log(typeof null);  // object data type 
 console.log(typeof undefined);//undefined data type
+let sym1=Symbol()
+console.log(typeof sym1=="symbol");
+// directly cant compare with symbol as type of will return in a string 
+console.log(typeof(typeof "null"));
+console.log("ypeof ");
