@@ -22,4 +22,5 @@ let sym1=Symbol()
 console.log(typeof sym1=="symbol");
 // directly cant compare with symbol as type of will return in a string 
 console.log(typeof(typeof "null"));
-console.log("ypeof ");
+// console.log("ypeof ");
+console.log(typeof sym1);

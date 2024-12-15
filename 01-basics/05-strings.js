@@ -5,6 +5,9 @@ let age = 19
 console.log(`hello my name is ${name} and i am ${age} years old`);
 
 const gameName=new String(`vishal`) /* another way of declaring a string*/
+console.log(typeof gameName);
+console.log(typeof name);
+
 console.log(gameName.length);
 console.log(gameName[0]); 
 /*
@@ -16,7 +19,7 @@ gameName[4]=a
 gameName[5]=l
  not an array but key value pair */
  
-// console.log(gameName.__proto__);???????
+console.log(gameName.__proto__);
 console.log(gameName.toUpperCase());
 console.log(gameName.charAt(2));
 console.log(gameName.indexOf("a"));
@@ -24,7 +27,6 @@ console.log(gameName.indexOf("a"));
 let myName="vishhuu"
 let anotherString= myName.substring(1 , 4) /* last vala isnt included and we cant put negative values alsoooo */
 console.log(anotherString.length);
-
  let newString=myName.slice(0,9) 
  // string is immutable,once declared wont be able to change!
  /*output will be empty string if my index start is greater or equal to the strlength*/
@@ -39,10 +41,12 @@ console.log(anotherString.length);
 console.log(newString);
  
 let newStringOne="    vishaallll     "
-console.log(newStringOne.trimEnd()); 
+console.log(newStringOne.trim()); 
 // trim removes empty spaces.
 // trim wont remove spaces in middle of the text only end
 const url = "mitthu-loves-to-eat-everything" 
+console.log(url.split("-"));
+
 console.log(url.replace('-',' '));
 // replace is changing only first occurence to change all use replaceAll
 console.log(url.includes("o"));
@@ -56,9 +60,11 @@ console.log(stringOne.charAt(stringOne.length-1));
 //^ for last chaaracter === str.length-1
 let result= stringOne.concat("my",stringTwo,gameName)
 console.log(result);
-// console.log(stringTwo.endsWith("world"));
+ console.log(stringTwo.endsWith("world "));
+ console.log(stringTwo.endsWith("d"));
 // console.log(stringOne.startsWith("h"));
 
+let testString=[1,2,3,4,5,6]
 
 
 

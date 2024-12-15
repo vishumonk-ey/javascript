@@ -32,9 +32,11 @@ console.log("1"+2);
 console.log(1+"2");
  console.log("1"+3+2); 
 //  string first so everything treated as string
-console.log(1*2+4+"2"); 
+console.log("1*2"+4+2); 
 // string last so first operation is done then treated as a string
 let x=2n
 let y= ++x
 console.log(y);
 console.log(typeof y);
+console.log(typeof NaN);
+console.log( Number(""));

@@ -1,13 +1,16 @@
 // ###### dateeee------> object
 
 const newDate= new Date()
-// console.log(newDate.toString());
-// console.log(newDate.toLocaleString());
-// console.log(Date.now().toLocaleString());
+console.log(newDate);
+console.log(Date.now());
+
+console.log(newDate.toString());
+console.log(newDate.toLocaleString());
+console.log(Date.now().toLocaleString());
 // Date.now().toLocaleString krkee mereko epoch se time mil rha hai but new Date() krke vo acche se date and time de rha hai
 // console.log(newDate.toDateString());
 // console.log(typeof Date.now());
-// date.now()-->number data type 
+// date.now()-->number data type  ---------------<
 // new Date()-->object data type 
 // console.log(typeof new Date());
 // console.log(newDate.toISOString());
@@ -23,8 +26,8 @@ const myNewDate= new Date("2024-01-13")
 // console.log(myNewDate.toDateString());
 
 const newDateOne=new Date()
-// console.log(newDateOne.toLocaleString('default',{
-//     weekday:'long',
-// }));
+console.log(newDateOne.toLocaleString('default',{
+    weekday:'short',
+}));
 
 // we can customize the way we want our date in locale string.
