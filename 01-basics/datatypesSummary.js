@@ -1,6 +1,6 @@
 // datatypes***
 // Primitive and Non Primitive . classified on the basis of how they are stored in the memory and how they are called from the memory
-// $###Primitive -call by value
+// $###Primitive - call by value
 
 // 7 types-:
 // string

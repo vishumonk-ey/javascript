@@ -22,4 +22,5 @@ console.log(Array.of(score1,score2));
 console.log(Array.of('1',2,'5'))
 const intro="my name is vishal"
 console.log(Array.from(intro))
+console.log(Array.of(intro))
 console.log(intro.split(""))

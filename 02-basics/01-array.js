@@ -33,3 +33,6 @@ console.log(arrOne);
 const newArr= [0,1,2,3,4,5]
 const newArrStr=newArr.join("-") /* usedd for converting an array into string with its element by a specifed seperator */
 console.log(newArrStr);
+let arr1=new Array(0,0,1,2,3,4,5)
+arr1.splice(0,0,-1)
+console.log(arr1);

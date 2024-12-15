@@ -29,6 +29,8 @@ const JsUser={
 // console.log(JsUser[mySym])
 // keys are generally stored as string in system prr hamne symbol ko bhi key liya !!!!1
  JsUser.age=18;
+ 
+ 
 //  Object.freeze(JsUser)  ----- now value wont be changed
 JsUser.greeting=function (){
     console.log("hello jsUser");
@@ -36,3 +38,13 @@ JsUser.greeting=function (){
 console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());
 console.log(typeof mySym);
+let myObj1={
+    name:"vishall",
+    age:"19"
+}
+myObj1.sem="3rd"
+console.log(myObj1.name);
+console.log(myObj1["name"]);
+console.log(myObj1["age"]);
+console.log(myObj1["sem"]);
+

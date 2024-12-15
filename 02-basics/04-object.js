@@ -52,6 +52,24 @@ const course={
 // const se object declare krdiya means the refference of the object is fixed. vapas se course naam se kuch nhi declare kr sktA
 let {courseInstructor: inst}=course
 let {name: naam} = course
+
 console.log(naam);
 console.log(inst);
+
+let userOne={
+    username:"mitthu",
+    feature:"motapet"
+}
+let {username : name}=userOne
+let {feature : speciality}=userOne
+let userTwo={
+    user:"shaalu",
+    age:"19"
+}
+let target=Object.assign(userOne,userTwo)
+// assign is useful for merging one or more objects properties into a target array. but if key is already existing then overwriting happens.
+// and finally returns the target object.
+console.log(target);
+
+
 
