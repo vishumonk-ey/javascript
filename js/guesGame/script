@@ -1,0 +1,70 @@
+let randomNum = Math.floor(Math.random() * 100) + 1;
+let numOfGuess = 0;
+let prevGuess = '';
+let newGame = false;
+let regexp = /^\d+$/;
+const display = document.querySelector('.lowOrHi');
+let inputField = document.querySelector("input[type='text']");
+document.querySelector("input[type='submit']").addEventListener(
+  'click',
+  (e) => {
+    e.preventDefault();
+    if (newGame) {
+      newGame = false;
+      reset();
+    } else {
+      if (
+        !regexp.test(inputField.value) ||
+        inputField.value > 100 ||
+        inputField.value < 0
+      ) {
+        displayMessage('Please Enter a valid number!');
+        return;
+      }
+      checkNum(inputField.value);
+    }
+  },
+  false
+);
+
+function checkNum(val) {
+  if (val < randomNum) {
+    displayMessage("it's low !");
+  } else if (val > randomNum) {
+    displayMessage("it's high !");
+  } else {
+    displayMessage('Yayyy! You won ! ');
+    document.querySelector("input[type='submit']").classList.add('playAgain');
+    playAgain()
+    return;
+  }
+  document.querySelector('.guesses').textContent += `${val},`;
+  numOfGuess++;
+  let guessRemaining = 10 - numOfGuess;
+  document.querySelector('.lastResult').textContent = guessRemaining;
+  if (guessRemaining == 0) {
+    displayMessage(`Game Over ! The value was ${randomNum}`);
+    playAgain()
+  }
+}
+function displayMessage(text) {
+  const p = document.createElement('p');
+  p.appendChild(document.createTextNode(text));
+  display.childElementCount == 0
+    ? display.appendChild(p)
+    : display.replaceChild(p, display.querySelector('p'));
+}
+function playAgain() {
+  inputField.setAttribute('disabled','true')
+  document
+    .querySelector("input[type='submit']")
+    .setAttribute('value', 'Play Again');
+  newGame = true;
+}
+function reset() {
+  display.textContent=''
+  prevGuess=''
+  document.querySelector("#lastResult").textContent='10'
+  randomNum = Math.floor(Math.random() * 100) + 1;
+  inputField.setAttribute('disabled','false')
+}
