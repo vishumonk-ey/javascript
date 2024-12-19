@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>healthOhub</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-mono text-white ease-in min-h-[100vh] ">
+    <nav
+      class="flex p-4 fixed justify-between items-center w-full bg-[#262a3b]  "
+    >
+      <!-- logo -->
+      <div class="flex logo space-x-3 items-center">
+        <img src="#" alt="" srcset="" class="h-4" />
+        <p class="text-lg text-white font-mono">Health-o-Hub</p>
+      </div>
+      <!-- links -->
+      <ul class="hidden md:flex justify-end items-center mx-auto space-x-4">
+        <li>Home</li>
+        <li>Pricing</li>
+        <li>About Us</li>
+        <li class="mr-6">
+          <button
+            class="text-white bg-none border-1 border-white rounded-lg px-4 py-1"
+          >
+            Sign Up
+          </button>
+        </li>
+      </ul>
+      <i class="ri-menu-3-line" id="menu"></i>
+      <!-- menu for mobile -->
+      <div class="bg-[#262a3b] absolute w-full top-14 right-[-100%] py-2">
+        <ul class="flex flex-col items-center space-y-4">
+          <li
+            class="hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8 cursor-pointer"
+          >
+            Home
+          </li>
+          <li
+            class="hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8 cursor-pointer"
+          >
+            Pricing
+          </li>
+          <li
+            class="hover:text-blue-300 hover:underline decoration-blue-300 underline-offset-8 cursor-pointer"
+          >
+            About Us
+          </li>
+          <li class="pt-4">
+            <button
+              class="text-white py-1 px-3 underline underline-offset-4 decoration-blue-300 cursor-pointer hover:text-blue-300 hover:decoration-white"
+            >
+              Sign Up
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- main section -->
+    <div
+      class="flex flex-col items-center bg-[#262a3b] pt-16 md:flex-row md:items-end pb-0 w-full "
+    >
+      <div class="flex flex-col items-center max-w-48 space-y-4 md:max-w-64">
+        <h1
+          class="font-extrabold text-3xl text-center"
+          style="word-spacing: -6px"
+        >
+          Get your Recipes and Nutritional info all at a single place !
+        </h1>
+        <p class="text-sm font-semibold text-center">
+          From Indian to Mexican,Health-o-Hub gives you recipes personalized for
+          you and which are tasty.
+        </p>
+        <button
+          class="bg-orange-400 py-1 px-4 rounded-xl text-[#262a3b] text-sm hover:text-orange-500 hover:bg-white"
+        >
+          Download the app
+        </button>
+      </div>
+      <!-- Image wrapper -->
+      <div class="flex items-center justify-center p-10 pb-0 sm:w-1/2 lg:w-1/4">
+        <img
+          src="../9253c0d1-1bdc-4979-b376-4072ec5c190d.webp"
+          alt=""
+          class="object-contain rounded-t-3xl w-full "
+        />
+      </div>
+    </div>
+  </body>
+</html>
