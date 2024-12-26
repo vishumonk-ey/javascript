@@ -1,0 +1,12 @@
+blocking code   - > blocks the flow of code ---> reading the file synchronously (code aage ka execute nhi hoga jab tk mera file read krke nhi aarha hai, thus blocking the flow of code)
+
+non-Blocking code -> doesnt blocks the flow of code --> aage ka code run hoga jab tk vo complete hokr aarha hai --> async 
+
+///JAVAscript--> single threaded language & by default synchronous in nature
+
+---:
+
+when a non Blocking code is encountered it is first pushed into the JS engine's call stack and then made a call to the Web Api or node environment and then popped of from the call stack . while in the runtime environment, it is taken care of when to push the call back function to the task queue.when the specified time comes it pushes the call back to the task queue and when the call stack is empty then the callback function from the task queue is pushed to the call stack.
+EVent loop continously monitors whether the call stack is empty or not , when it becomes empty it pushes all the CB FROM THE PRIORITY Queue first and then task queue .
+in case of setTimeouut, timer api dhyaan rkhta hai jaise hi timer khtm uss time push krdeta hai CB ko
+In case of promises, when the promise fulfills or rejects its .then() or .catch() cb is pushed to the priority queue
