@@ -21,4 +21,6 @@ Object.defineProperty(vishu,"name",{
 })
 // enumerable false so to when i will iterate ye iterate nhi hoga 
 //rewrite nhi krsksta isko
+//math.pi ka property mai vapas se redefine nhi krskta it shows error..because configurble false hai.
+// configurable tells whether we can change the propertyDescriptor or not
 
