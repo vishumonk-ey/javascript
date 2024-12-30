@@ -7,7 +7,7 @@ class User{
     get username(){
         return this._username.toUpperCase()
     }
-    //getter setter by default rehte hain but we can explicitly also declare.
+    //by default they arent defined and the getting and setting of prop is done simply without any extra logic
     // and both of them should be present together
     set username(val){
         this._username=val
