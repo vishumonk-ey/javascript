@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: aqua;">
+<button id="orange">orange</button>
+<button id="green">green</button>
+<button id="yellow">yellow</button>
+</body>
+<script>
+    // function outer(){
+    //     let name="vishal"
+    //     function inner(){
+    //         console.log(name); 
+    //     }
+    //     inner()
+    // }
+    // outer()
+    // inner function ke paas khudka scope to hai hi but it also has access to the variables declared in the same enviornment as where it is declared--> lexical scoping
+
+    function outer(){
+        let name="vishal"
+        function inner(){
+            console.log(name); 
+        }
+        return inner
+        // when we are returning not only its reference is being returned.uske reference ke saath uska lexical scope ka bhi refernce return kiya jaata hai , even though outer e.c hatt gyaa
+    }
+    const myFunc=outer()
+        myFunc()
+
+</script>
+<script>
+function clickHandler(color){
+    return function(){
+        document.querySelector("body").style.backgroundColor=`${color}`     
+    }
+    // ab function ka reference is being passed to the EventListener and jab click krunga to vo execute hojayegaa... color ka access bhi rhega iske paas
+}
+
+    document.querySelector("#orange").addEventListener("click",clickHandler("orange"))
+    document.querySelector("#green").addEventListener("click",(e)=>{
+        document.querySelector("body").style.backgroundColor="green"
+    })
+</script>
+</html>
